@@ -63,6 +63,23 @@ footer{padding:30px 0;color:#9f9a91;font-size:13px;display:flex;justify-content:
 @media(max-width:800px){
  .nav-links{display:none} .about,.contact{grid-template-columns:1fr} .services{grid-template-columns:1fr}
  .projects{grid-template-columns:1fr} .hero{min-height:78vh;padding:60px 0}
+}.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.about > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 </style>
 </head>
